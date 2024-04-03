@@ -17,7 +17,7 @@
             </div>
 
             <div class="col-6 text-end">
-                <a asp-controller="Product" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create New Product</a>
+                <a asp-controller="Product" asp-action="Upsert" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create New Product</a>
             </div>
         </div>
 
@@ -44,11 +44,11 @@
                         <td>@obj.ISBN</td> 
                         <td>@obj.Price</td>
                         <td>@obj.Author</td>
-                        <td>@obj.CategoryId</td>
+                        <td>@obj.Category.Name</td>
                        @*  <td>@obj.Price100</td> *@
                         <td>
                             <div class="w-75 btn-group" role="group">
-                                <a asp-action="Edit" class="btn btn-success mx-2" asp-controller="Product" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a asp-action="Upsert" class="btn btn-success mx-2" asp-controller="Product" asp-route-id="@obj.Id"><i class="bi bi-pencil-square"></i> Edit</a>
                                 <a asp-action="Delete" class="btn btn-danger mx-2" asp-controller="Product" asp-route-id="@obj.Id"><i class="bi bi-trash3"></i> Delete</a>
                             </div>
                         </td>
