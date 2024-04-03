@@ -7,10 +7,10 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-a {
+/*a {
   color: #0077cc;
 }
-
+*/
 .btn-primary {
   color: #fff;
   background-color: #1b6ec2;
@@ -37,6 +37,16 @@ a {
 button.accept-policy {
   font-size: 1rem;
   line-height: inherit;
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+.nav-item{
+    margin: 0px
 }
 
 .footer {
